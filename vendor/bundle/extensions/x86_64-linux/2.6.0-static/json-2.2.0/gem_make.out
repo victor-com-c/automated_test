@@ -1,0 +1,13 @@
+current directory: /home/vitor_siqueira/Documents/first_test/vendor/bundle/gems/json-2.2.0/ext/json
+/home/vitor_siqueira/.rbenv/versions/2.6.3/bin/ruby -I /home/vitor_siqueira/.rbenv/versions/2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20191011-9114-cr4pja.rb extconf.rb
+creating Makefile
+
+current directory: /home/vitor_siqueira/Documents/first_test/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/vitor_siqueira/Documents/first_test/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/vitor_siqueira/Documents/first_test/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" install

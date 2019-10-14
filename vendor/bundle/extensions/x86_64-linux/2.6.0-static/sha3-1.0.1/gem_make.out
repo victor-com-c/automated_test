@@ -1,0 +1,21 @@
+current directory: /home/vitor_siqueira/Documents/first_test/vendor/bundle/gems/sha3-1.0.1/ext/sha3
+/home/vitor_siqueira/.rbenv/versions/2.6.3/bin/ruby -I /home/vitor_siqueira/.rbenv/versions/2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20191011-9114-tlx6it.rb extconf.rb
+checking for sha3.h... yes
+checking for digest.h... yes
+creating Makefile
+
+current directory: /home/vitor_siqueira/Documents/first_test/vendor/bundle/gems/sha3-1.0.1/ext/sha3
+make "DESTDIR=" clean
+
+current directory: /home/vitor_siqueira/Documents/first_test/vendor/bundle/gems/sha3-1.0.1/ext/sha3
+make "DESTDIR="
+compiling KeccakF-1600-opt64.c
+compiling KeccakHash.c
+compiling KeccakSponge.c
+compiling digest.c
+compiling sha3.c
+linking shared-object sha3_n.so
+
+current directory: /home/vitor_siqueira/Documents/first_test/vendor/bundle/gems/sha3-1.0.1/ext/sha3
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 sha3_n.so ./.gem.20191011-9114-f63iwi

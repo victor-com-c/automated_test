@@ -1,0 +1,42 @@
+language: ruby
+cache: bundler
+branches:
+  only:
+    - /.*/
+env:
+  global:
+    - DISPLAY=":0"
+matrix:
+  include:
+    - rvm: 2.4.6
+      dist: xenial
+      env: RAKE_TASK=spec
+    - rvm: 2.4.6
+      dist: xenial
+      env: RAKE_TASK=rubocop
+    - rvm: 2.6.3
+      dist: xenial
+      env: RAKE_TASK=spec
+    - rvm: jruby-9.2.7.0
+      dist: xenial
+      jdk: openjdk8
+      env: RAKE_TASK=spec JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom"
+    - rvm: 2.6.3
+      os: osx
+      osx_image: xcode11
+      env: RAKE_TASK=spec
+addons:
+  firefox: latest
+  chrome: stable
+  apt:
+    packages:
+      - ffmpeg
+  homebrew:
+    packages:
+      - ffmpeg
+before_script:
+  - bash support/start_xvfb.sh
+  - bash support/start_test_reporter.sh
+script: bundle exec rake $RAKE_TASK
+after_script:
+  - bash support/stop_test_reporter.sh
