@@ -60,6 +60,7 @@ GEM
     faye-websocket (0.10.9)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
+    ffi (1.11.3)
     gherkin (5.1.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
@@ -102,7 +103,7 @@ GEM
     page_navigation (0.10)
       data_magic (>= 0.22)
     public_suffix (4.0.1)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (12.3.3)
@@ -167,6 +168,7 @@ DEPENDENCIES
   colorize
   cucumber
   debase
+  ffi
   httparty
   mechanize
   page-object
